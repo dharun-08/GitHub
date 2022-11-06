@@ -1,0 +1,8 @@
+//php connection code
+
+$conn = mysqli_connect('localhost','username','password','databasename');
+
+//check connection
+if(!$conn){
+	echo 'Connection error: '. mysqli_connect_error();
+}
